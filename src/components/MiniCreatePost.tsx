@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { UserAvatar } from './UserAvatar';
 import { Input } from './ui/Input';
 import { Button } from './ui/Button';
-import { Ghost, ImageIcon, Link2 } from 'lucide-react';
+import { ImageIcon, Link2 } from 'lucide-react';
 
 type Props = {
   session: Session | null;

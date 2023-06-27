@@ -4,6 +4,7 @@ import { buttonVariants } from './ui/Button';
 import { authOptions } from '@/lib/auth';
 import { getServerSession } from 'next-auth';
 import { UserAccountNav } from './UserAccountNav';
+import SearchBar from './SearchBar';
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
@@ -15,7 +16,7 @@ const Navbar = async () => {
           <p className="hidden text-zinc-700 text-sm font-medium md:block">Breadit</p>
         </Link>
         {/* search bar */}
-        {/* <SearchBar /> */}
+        <SearchBar />
 
         {/* actions */}
         {session?.user ? (

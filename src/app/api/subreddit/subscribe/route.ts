@@ -1,7 +1,6 @@
 import { getAuthSession } from '@/lib/auth';
 import { db } from '@/lib/db';
 import { SubredditSubscriptionValidator } from '@/lib/validators/subreddit';
-import { Sub } from '@radix-ui/react-dropdown-menu';
 import { z } from 'zod';
 
 export async function POST(req: Request) {
